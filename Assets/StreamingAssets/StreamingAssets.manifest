@@ -1,0 +1,13 @@
+ManifestFileVersion: 0
+CRC: 1357157481
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: ui/prefab/image.prefab.ab
+      Dependencies: {}
+    Info_1:
+      Name: ui/res/baoxiang.png.ab
+      Dependencies: {}
+    Info_2:
+      Name: ui/res/daqiandai.png.ab
+      Dependencies: {}

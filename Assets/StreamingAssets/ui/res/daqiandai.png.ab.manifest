@@ -1,0 +1,16 @@
+ManifestFileVersion: 0
+CRC: 286141695
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9f537e10ffdfd80564f51cfa56ca2c7d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 7859cd501ea75098bcf7e53f1b477c26
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+Assets:
+- Assets/BuildResources/UI/Res/daqiandai.png
+Dependencies: []
