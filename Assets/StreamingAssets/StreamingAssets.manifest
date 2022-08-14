@@ -1,13 +1,15 @@
 ManifestFileVersion: 0
-CRC: 1357157481
+CRC: 3310141955
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: ui/prefab/image.prefab.ab
-      Dependencies: {}
+      Name: ui/prefabs/testui.prefab.ab
+      Dependencies:
+        Dependency_0: ui/res/main_icon_slot.png.ab
+        Dependency_1: ui/res/start_up_bg.jpg.ab
     Info_1:
-      Name: ui/res/baoxiang.png.ab
+      Name: ui/res/main_icon_slot.png.ab
       Dependencies: {}
     Info_2:
-      Name: ui/res/daqiandai.png.ab
+      Name: ui/res/start_up_bg.jpg.ab
       Dependencies: {}
