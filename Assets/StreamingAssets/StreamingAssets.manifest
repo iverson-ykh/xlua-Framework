@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3310141955
+CRC: 1728190041
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: ui/prefabs/testui.prefab.ab
+      Name: ui/prefabs/login/loginui.prefab.ab
       Dependencies:
         Dependency_0: ui/res/main_icon_slot.png.ab
         Dependency_1: ui/res/start_up_bg.jpg.ab

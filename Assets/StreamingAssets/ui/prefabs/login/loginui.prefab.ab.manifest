@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1019028475
+CRC: 2656527150
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 15b6871ae327100570f5ee1e678f1fda
+    Hash: f4b4f1d4cb445bca7e3c156de33edccc
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 690aabce864bbc79a775d251dcebbc9c
+    Hash: 28b10f81216997ceff83a74a63ce1fc1
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -20,9 +20,9 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 128
@@ -34,7 +34,7 @@ ClassTypes:
 - Class: 224
   Script: {instanceID: 0}
 Assets:
-- Assets/BuildResources/UI/Prefabs/TestUI.prefab
+- Assets/BuildResources/UI/Prefabs/Login/LoginUI.prefab
 Dependencies:
 - D:/gamedev/Framework/xlua-Framework/Assets/StreamingAssets/ui/res/main_icon_slot.png.ab
 - D:/gamedev/Framework/xlua-Framework/Assets/StreamingAssets/ui/res/start_up_bg.jpg.ab

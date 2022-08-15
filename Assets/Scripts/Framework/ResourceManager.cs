@@ -52,15 +52,20 @@ public class ResourceManager : MonoBehaviour
         action?.Invoke(bundleRequest?.asset);
 
     }
-    public void LoadAsset(string assetName, Action<UObject> action)
+    private void LoadAsset(string assetName, Action<UObject> action)
     {
         StartCoroutine(LoadBundleAsync(assetName, action));
+    }
+
+    public void LoadUI(string name,Action<UObject>action=null) {
+        LoadAsset(PathUtil.GetUIPath(name),action);
     }
 
     void Start()
     {
         ParseVersionFile();
-        LoadAsset("Assets/BuildResources/UI/Prefabs/TestUI.prefab",OnComplete);
+        //string resource = PathUtil.GetUIPath();
+        LoadUI("Login/LoginUI",OnComplete);
     }
     private void OnComplete(UObject obj) {
         GameObject go = Instantiate(obj) as GameObject;
