@@ -48,13 +48,28 @@ public class ResourceManager : MonoBehaviour
 
         AssetBundleRequest bundleRequest = request.assetBundle.LoadAssetAsync(assetName);
         yield return bundleRequest;
-
+        Debug.Log("this is PackageBundle");
         action?.Invoke(bundleRequest?.asset);
 
     }
+    void EditorLoadAsset(string assetName,Action<UObject>action=null) {
+        Debug.Log("this is editor");
+        UObject obj = UnityEditor.AssetDatabase.LoadAssetAtPath(assetName,typeof(UObject));
+        if (obj==null) {
+            Debug.LogError("assets name is not exist:"+assetName);
+        }
+        action? .Invoke(obj);
+    }
     private void LoadAsset(string assetName, Action<UObject> action)
     {
-        StartCoroutine(LoadBundleAsync(assetName, action));
+        if (AppConst.GameMode == GameMode.EditorMode)
+        {
+            EditorLoadAsset(assetName, action);
+        }
+        else {
+            StartCoroutine(LoadBundleAsync(assetName, action));
+        }
+        
     }
 
     public void LoadUI(string name,Action<UObject>action=null) {
